@@ -7,6 +7,7 @@ import Result from '../components/Result';
 import SettingsComponent from '../components/SettingsComponent';
 import ClearButton from '../components/ClearButton';
 import ScenarioParts from '../components/ScenarioParts';
+import RoundWinner from '../components/RoundWinner';
 
 const HomePage = () => {
     return (
@@ -22,7 +23,9 @@ const HomePage = () => {
                 <Grid item xs={12} sm={5}>
                     <Result />
                 </Grid>
-                <Grid item xs={12} sm={1} />
+                <Grid item xs={12} sm={1} >
+                <RoundWinner />
+                </Grid>
             </Grid>
             <Grid container spacing={2}>
                 <Grid item xs={12} sm={3} />
