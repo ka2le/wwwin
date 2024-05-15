@@ -1,7 +1,7 @@
 import React from 'react';
 import { Paper } from '@mui/material';
 import { useGame } from '../context/GameContext';
-import { useResultParser } from '../functions/useResultParser';
+import { useResultParser } from '../hooks/useResultParser';
 
 const Result = () => {
     const { state } = useGame();

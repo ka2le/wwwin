@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.home-page{
+   /* background-image: url('../images/background.webp');
+   background-repeat: repeat;
+   background-size: 100%; */
+   background-color: rgb(248, 242, 233);
+}
+
+
+.MuiGrid-item {
+
+}
+.MuiButton-root {
+  background-color: #282c34 !important;
+  color: white;
+  margin: 10px;
+}
+.MuiTypography-root {
+  color: #282c34;
+  text-shadow: 1px 1px 10px #c7d9ff;
+}

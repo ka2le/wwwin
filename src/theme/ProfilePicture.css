@@ -1,0 +1,34 @@
+.profile-picture-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.profile-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-player-1 {
+    background-image: url('../images/profile-background.webp');
+    filter: hue-rotate(10deg) blur(0.8px); /* Default color for player 1 */
+    transform: scaleX(-1);
+}
+
+.background-player-2 {
+    background-image: url('../images/profile-background.webp');
+    filter: hue-rotate(240deg)   blur(0.8px); /* Adjust the hue for player 2 */
+}
+
+.profile-picture {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}

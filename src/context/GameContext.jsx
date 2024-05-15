@@ -16,7 +16,7 @@ Your Tasks:
 The most important thing is to end in that exact format WINNER: ContendersName`,
     competitionType: 'The contestants will face off in a game of Chess',
     contestant1: 'Triceratops',
-    contestant2: 'Ankylosaurus',
+    contestant2: 'Stegosaurus',
     contestant1Factors: 'broken leg, metal battle helmet, higher intelligence',
     contestant2Factors: 'near blindness, wielding a sword, can breathe fire'
 

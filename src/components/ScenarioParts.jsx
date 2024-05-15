@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextField, Typography } from '@mui/material';
 import { useGame } from '../context/GameContext';
-import {useMergeScenario} from '../functions/useMergeScenario';
+import {useMergeScenario} from '../hooks/useMergeScenario';
 
 const ScenarioParts = () => {
     const { state, setState } = useGame();
@@ -14,7 +14,7 @@ const ScenarioParts = () => {
     return (
         <div>
             <Typography variant="h6" gutterBottom>
-                Scenario
+                
             </Typography>
            
             <TextField
