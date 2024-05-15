@@ -7,7 +7,7 @@ const Result = () => {
     const { apiResult } = state;
 
     return (
-        <Paper style={{ maxHeight: 300, overflowY: 'auto', padding: '20px', marginTop: '20px' }}>
+        <Paper style={{ maxHeight: 420, overflowY: 'auto', padding: '20px', marginTop: '20px' }}>
             <div>
                 {apiResult || "No results to display."}
             </div>

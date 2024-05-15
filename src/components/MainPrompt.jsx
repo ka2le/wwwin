@@ -12,7 +12,7 @@ const MainPrompt = () => {
     return (
         <TextField
             multiline
-            rows={4}
+            rows={18}
             variant="outlined"
             fullWidth
             value={state.mainPrompt || ''}

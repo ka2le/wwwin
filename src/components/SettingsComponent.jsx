@@ -22,14 +22,14 @@ const SettingsComponent = () => {
                 onChange={handleInputChange('apiKey')}
                 margin="normal"
             />
-            <TextField
+            {/* <TextField
                 label="URL"
                 variant="outlined"
                 fullWidth
                 value={state.url || ''}
                 onChange={handleInputChange('url')}
                 margin="normal"
-            />
+            /> */}
         </div>
     );
 };
