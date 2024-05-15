@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './theme/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { GameProvider } from './GameContext';
+import { GameProvider } from './context/GameContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
