@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/wwwin/static/css/main.4812fa5c.css",
-    "main.js": "/wwwin/static/js/main.7354cf2a.js",
+    "main.css": "/wwwin/static/css/main.6fb93494.css",
+    "main.js": "/wwwin/static/js/main.0866ed2c.js",
     "static/js/453.29650081.chunk.js": "/wwwin/static/js/453.29650081.chunk.js",
     "static/media/triceratops.webp": "/wwwin/static/media/triceratops.bae7828355d39413b5b9.webp",
     "static/media/profile-background.webp": "/wwwin/static/media/profile-background.79062fb3844b39389e45.webp",
     "static/media/stegosaurus.webp": "/wwwin/static/media/stegosaurus.3cea052bc0f590eab001.webp",
+    "static/media/background.webp": "/wwwin/static/media/background.ae78cda21786d3189cef.webp",
     "static/media/logo.svg": "/wwwin/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/wwwin/index.html",
-    "main.4812fa5c.css.map": "/wwwin/static/css/main.4812fa5c.css.map",
-    "main.7354cf2a.js.map": "/wwwin/static/js/main.7354cf2a.js.map",
+    "main.6fb93494.css.map": "/wwwin/static/css/main.6fb93494.css.map",
+    "main.0866ed2c.js.map": "/wwwin/static/js/main.0866ed2c.js.map",
     "453.29650081.chunk.js.map": "/wwwin/static/js/453.29650081.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4812fa5c.css",
-    "static/js/main.7354cf2a.js"
+    "static/css/main.6fb93494.css",
+    "static/js/main.0866ed2c.js"
   ]
 }
