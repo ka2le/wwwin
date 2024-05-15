@@ -45,9 +45,7 @@
 }
 
 
-.MuiGrid-item {
 
-}
 .MuiButton-root {
   background-color: #282c34 !important;
   color: white;
@@ -55,5 +53,6 @@
 }
 .MuiTypography-root {
   color: #282c34;
+  font-size: 1rem;
   text-shadow: 1px 1px 10px #c7d9ff;
 }

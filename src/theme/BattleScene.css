@@ -7,7 +7,7 @@
     height: 100%;
     overflow: hidden;
     display: none;
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     z-index: 999;
 }
 
@@ -90,8 +90,33 @@
 .profile-picture.jiggle {
     animation: jiggle 0.5s infinite;
 }
+.battle-scene .profile-picture {
+    width: 70%;
+}
+
 
 .flipped-container {
     transform: scaleX(-1);
     display: inline-block;
 }
+
+/* Media query for portrait mode */
+@media (max-aspect-ratio: 1/1) {
+    .profile-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flipped-container,
+    .profile-picture-wrapper {
+        margin: 3cap 0;
+    }
+
+    .vs-text {
+        transform: none;
+        margin: 0px 0;
+    }
+}
+
+
+
