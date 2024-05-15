@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './theme/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { GameProvider } from './GameContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+     <GameProvider>
+      <App />
+    </GameProvider>
   </React.StrictMode>
 );
 
