@@ -6,10 +6,14 @@ export const useCallApi = () => {
     const { state, setState } = useGame();
     const { apiKey, mainPrompt } = state;
 
-    const groq = new Groq({
-        apiKey: apiKey,  // Fetching apiKey from context
-        dangerouslyAllowBrowser: true,
-    });
+    // Conditional Groq SDK initialization
+    let groq;
+    if (apiKey) {
+        groq = new Groq({
+            apiKey: apiKey,  // Fetching apiKey from context
+            dangerouslyAllowBrowser: true,
+        });
+    }
 
     const callApi = async () => {
         if (!apiKey || !mainPrompt) {
@@ -17,23 +21,27 @@ export const useCallApi = () => {
             return;
         }
 
-        try {
-            const completion = await groq.chat.completions.create({
-                messages: [
-                    {
-                        role: "user",
-                        content: mainPrompt  // Using mainPrompt from context
-                    }
-                ],
-                model: "llama3-8b-8192"
-            });
-            setState({ ...state, apiResult: completion.choices[0]?.message?.content || "" });
-        } catch (error) {
-            console.error('API call failed:', error);
-            setState({ ...state, apiResult: 'API call failed: ' + error.message });
+        if (groq) {
+            try {
+                const completion = await groq.chat.completions.create({
+                    messages: [
+                        {
+                            role: "user",
+                            content: mainPrompt  // Using mainPrompt from context
+                        }
+                    ],
+                    model: "llama3-8b-8192"
+                });
+                setState({ ...state, apiResult: completion.choices[0]?.message?.content || "" });
+            } catch (error) {
+                console.error('API call failed:', error);
+                setState({ ...state, apiResult: 'API call failed: ' + error.message });
+            }
+        } else {
+            console.error('Groq instance is not initialized due to missing API Key');
         }
     };
-    //const  callApi = () => {}
+
     return callApi;
 };
 
