@@ -10,6 +10,7 @@ import RoundWinner from '../components/RoundWinner';
 import Profile from '../components/Profile';
 import CompetitionType from '../components/CompetitionType';
 import AnimateButton from '../components/AnimateButton';
+import ServerTest from '../components/ServerTest';
 
 const HomePage = () => {
     return (
@@ -24,6 +25,7 @@ const HomePage = () => {
                     
                     <RoundWinner />
                     <AnimateButton />
+                    <ServerTest />
                 </Grid>
                 <Grid item xs={6} sm={3} order={{ xs: 2, sm: 3 }}>
                     <Profile playerNumber={2} />

@@ -8,7 +8,7 @@ const AnimateButton = () => {
     const handleAnimate = () => {
         setShowBattle(true);
         setTimeout(() => {
-            //setShowBattle(false);
+            setShowBattle(false);
         }, 5000); // duration of the animation
     };
 
