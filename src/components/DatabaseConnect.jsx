@@ -1,4 +1,3 @@
-// src/DataList.js
 import React, { useState, useEffect } from 'react';
 import { db } from '../hooks/firebase';
 import { collection, getDocs } from 'firebase/firestore';
@@ -20,7 +19,7 @@ const DatabaseConnect = () => {
 
   return (
     <div>
-      <h1>Data List</h1>
+      <h1>Database</h1>
       <ul>
         {data.map(item => (
           <li key={item.id}>{JSON.stringify(item)}</li>

@@ -3,7 +3,7 @@ import { Button } from '@mui/material';
 import { useGame } from '../context/GameContext';
 import { defaultState } from '../context/GameContext'; // Import the default state
 
-const ClearButton = () => {
+const Reset = () => {
     const { state, setState } = useGame();
 
     const handleClear = () => {
@@ -11,7 +11,6 @@ const ClearButton = () => {
             ...defaultState,
             apiKey: state.apiKey,
             mainPrompt: state.mainPrompt,
-            token: state.token,
 
         });
     };
@@ -23,4 +22,4 @@ const ClearButton = () => {
     );
 };
 
-export default ClearButton;
+export default Reset;

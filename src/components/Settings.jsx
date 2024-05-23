@@ -2,7 +2,7 @@ import React from 'react';
 import { TextField, Typography } from '@mui/material';
 import { useGame } from '../context/GameContext';
 
-const SettingsComponent = () => {
+const Settings = () => {
     const { state, setState } = useGame();
 
     const handleInputChange = (name) => (event) => {
@@ -22,14 +22,14 @@ const SettingsComponent = () => {
                 onChange={handleInputChange('apiKey')}
                 margin="normal"
             />
-            <TextField
+            {/* <TextField
                 label="Token"
                 variant="outlined"
                 fullWidth
                 value={state.token || ''}
                 onChange={handleInputChange('token')}
                 margin="normal"
-            />
+            /> */}
             {/* <TextField
                 label="URL"
                 variant="outlined"
@@ -42,4 +42,4 @@ const SettingsComponent = () => {
     );
 };
 
-export default SettingsComponent;
+export default Settings;
