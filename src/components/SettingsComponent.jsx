@@ -22,6 +22,14 @@ const SettingsComponent = () => {
                 onChange={handleInputChange('apiKey')}
                 margin="normal"
             />
+            <TextField
+                label="Token"
+                variant="outlined"
+                fullWidth
+                value={state.token || ''}
+                onChange={handleInputChange('token')}
+                margin="normal"
+            />
             {/* <TextField
                 label="URL"
                 variant="outlined"

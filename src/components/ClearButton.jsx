@@ -9,7 +9,10 @@ const ClearButton = () => {
     const handleClear = () => {
         setState({
             ...defaultState,
-            apiKey: state.apiKey
+            apiKey: state.apiKey,
+            mainPrompt: state.mainPrompt,
+            token: state.token,
+
         });
     };
 

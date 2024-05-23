@@ -11,6 +11,8 @@ import Profile from '../components/Profile';
 import CompetitionType from '../components/CompetitionType';
 import AnimateButton from '../components/AnimateButton';
 import ServerTest from '../components/ServerTest';
+import GetTokenTest from '../components/GetTokenTest';
+import DatabaseConnect from '../components/DatabaseConnect';
 
 const HomePage = () => {
     return (
@@ -25,7 +27,7 @@ const HomePage = () => {
                     
                     <RoundWinner />
                     <AnimateButton />
-                    <ServerTest />
+                    <DatabaseConnect />
                 </Grid>
                 <Grid item xs={6} sm={3} order={{ xs: 2, sm: 3 }}>
                     <Profile playerNumber={2} />
